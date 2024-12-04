@@ -30,14 +30,40 @@ The **Senior Historians** of the North Pole are on a mission to locate the missi
 ### Part 2
 For each number in the **Left List**, if it also exists in the **Right List**, calculate its weighted sum by multiplying the number by its count of occurrences in the **Right List**. Then sum all these weighted values.
 
-#### Example
-- **Left List**: `[1, 2, 3, 3, 3, 4]`
-- **Right List**: `[3, 3, 3, 4, 5, 9]`
-- **Weighted Occurrences**:
-  - Number `3` appears 3 times in **Right List** → Weighted Sum = `3 * 3 = 9`
-  - Number `4` appears 1 time in **Right List** → Weighted Sum = `4 * 1 = 4`
+### Example
 
-**Total Weighted Occurrence Sum** = `9 + 4 = 13`.
+- **Left List**: `[3, 4, 2, 1, 3, 3]`  
+- **Right List**: `[3, 3, 3, 4, 5, 9]`  
+
+#### **Calculation of Weighted Occurrences**:
+
+1. **Number `3`**  
+   - Appears **3 times** in the **Right List**.  
+   - Weighted Sum = `3 * 3 = 9`.  
+
+2. **Number `4`**  
+   - Appears **1 time** in the **Right List**.  
+   - Weighted Sum = `4 * 1 = 4`.  
+
+3. **Number `2`**  
+   - Appears **0 times** in the **Right List**.  
+   - Weighted Sum = `2 * 0 = 0`.  
+
+4. **Number `1`**  
+   - Appears **0 times** in the **Right List**.  
+   - Weighted Sum = `1 * 0 = 0`.  
+
+5. **Number `3` (again)**  
+   - Appears **3 times** in the **Right List**.  
+   - Weighted Sum = `3 * 3 = 9`.  
+
+6. **Number `3` (again)**  
+   - Appears **3 times** in the **Right List**.  
+   - Weighted Sum = `3 * 3 = 9`.  
+
+### **Total Similarity Score**  
+`9 + 4 + 0 + 0 + 9 + 9 = 31`.
+
 
 ---
 
@@ -72,7 +98,7 @@ Follow these steps to execute the solution:
 3. **Run the program: Execute the script with:**
     ```bash
     python solution.py
-
+    ```
     If your system requires python3, use:
     ```bash
     python3 solution.py
