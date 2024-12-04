@@ -61,8 +61,6 @@ For each number in the **Left List**, if it also exists in the **Right List**, c
    - Appears **3 times** in the **Right List**.  
    - Weighted Sum = `3 * 3 = 9`.  
 
----
-
 ### **Total Similarity Score**  
 `9 + 4 + 0 + 0 + 9 + 9 = 31`.
 
